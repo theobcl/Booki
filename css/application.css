@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import "normalize.css";
+@import "navbar.css";
+@import "search.css";
+@import "filter.css";
+@import "hosting.css";
+@import "activity.css";
+@import "footer.css";
+
+/* Couleur charte graphique
+#0065FC
+#DEEBFF
+#F2F2F2
+*/
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+.main {
+  padding: 0 48px;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+/* Tablet & Mobile Style */
+@media screen and (max-width: 992px) {
+  .main {
+    padding: 0;
+  }
+}

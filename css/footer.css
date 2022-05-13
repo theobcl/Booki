@@ -1,0 +1,35 @@
+footer {
+  background-color: #F2F2F2;
+  display: flex;
+  padding: 0 48px;
+}
+
+.footer-column {
+  width: 30%;
+  padding: 32px;
+}
+
+.footer-column h3 {
+  margin: 16px 0;
+}
+
+.footer-column > a {
+  display: block;
+  margin: 16px 0;
+}
+
+/* Tablet & Mobile Style */
+@media screen and (max-width: 992px) {
+  footer {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-column {
+    margin: auto;
+    padding: 8px 48px;
+    width: auto;
+
+  }
+}

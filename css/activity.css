@@ -1,0 +1,151 @@
+.activity-element {
+  margin: 32px 0;
+}
+
+.activity-cards {
+  margin-top: 32px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-card-double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-card-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 0 16px #0000002e;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.long-activity-card {
+  height: 100%;
+}
+
+.long-activity-card img {
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.activity-name h3 {
+  height: 10%;
+  font-size: 100%;
+  padding-left: 20px;
+  margin: 20px;
+}
+
+.small-image {
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+}
+
+#pomegues-card {
+  height: 220px;
+}
+
+#frioul-card {
+  height: 130px;
+}
+
+#garde-card {
+  height: 170px;
+}
+
+#longchamp-card {
+  height: 180px;
+}
+
+/* Between desktop and tablet style */
+@media screen and (max-width: 1250px) and (min-width: 1100px) {
+  .activity-card-item {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+  .activity-card-item {
+    max-width: 200px;
+  }
+}
+
+/* Tablet & Mobile Style */
+@media screen and (max-width: 992px) {
+  .activity-element {
+    padding: 0 32px;
+    margin-top: 0px;
+  }
+
+  .activity-element h2 {
+    margin-bottom: 16px;
+  }
+
+  .activity-cards {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .activity-card-item {
+    max-width: 400px;
+  }
+
+  #pomegues-card {
+    height: 175px;
+  }
+
+  #frioul-card {
+    height: 175px;
+  }
+
+  #garde-card {
+    height: 175px;
+  }
+
+  #longchamp-card {
+    height: 175px;
+  }
+
+}
+
+
+/* Tablet Style */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+  .small-image {
+    width: 400px;
+  }
+
+}
+
+/* Tablet & Mobile Style */
+@media screen and (max-width: 768px) {
+  .activity-cards {
+    display: inline;
+  }
+
+  .activity-card-item {
+    max-width: 700px;
+    height: 230px;
+    margin: 16px 0;
+  }
+
+  .small-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .activity-card-item img {
+    height: 75%;
+  }
+}
